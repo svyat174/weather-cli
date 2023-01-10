@@ -10,5 +10,8 @@
     "weather"
   ],
   "author": "Svyat Glukhov",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.2.2"
+  }
 }
