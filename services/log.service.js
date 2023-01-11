@@ -19,3 +19,14 @@ export const printHelp = () => {
 		`
   );
 };
+
+export const printWeather = (res) => {
+  console.log(
+    dedent`${chalk.bgYellow('WEATHER')} Weather on city ${res.name}
+		${res.weather[0].description}
+		Temperature: ${res.main.temp} feel like: ${res.main.feels_like}
+		Humidity: ${res.main.humidity}
+		Wind speed: ${res.wind.speed}		
+		`
+  );
+};
